@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="viewStart"
+    app:barrierMargin="8dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9a825"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:text="Numbers"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/FamilyMembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#43a047"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:text="Family Members"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numbers" />
+
+    <TextView
+        android:id="@+id/Colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6a1b9a"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:text="Colors"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FamilyMembers" />
+
+    <TextView
+        android:id="@+id/Phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00e5ff"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="8dp"
+        android:text="Phrases"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Colors" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_backgound"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="@dimen/list_height"
+        android:layout_height="@dimen/list_height" />
+
+    <LinearLayout
+        android:id="@+id/textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/text_background"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imageview"
+
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+
+            android:text="One"
+            android:textColor="@color/white" />
+        <!--        android:padding="24dp"-->
+        <!--        android:text="One"-->
+        <!--        android:paddingLeft="16dp"-->
+        <!--        android:paddingTop="16dp" />-->
+
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:text="Lutti"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_arrow_right_24" />
+
+
+</RelativeLayout>
